@@ -114,9 +114,12 @@ export const toolkit = [
     items: [
       { name: 'Swift', usedIn: 'Ringify' },
       { name: 'Dart', usedIn: 'Finansım' },
+      { name: 'JavaScript', usedIn: 'Bu portfolyo sitesi, React' },
       { name: 'TypeScript', usedIn: 'Plumbline, Afet Yardım' },
       { name: 'Java', usedIn: 'Spring Boot REST API' },
+      { name: 'Python', usedIn: 'Discord botları, BTK Akademi sertifikası' },
       { name: 'C#', usedIn: 'BTK Akademi sertifikası' },
+      { name: 'C++', usedIn: 'Arduino projeleri, BTK Akademi sertifikası' },
       { name: 'SQL', usedIn: 'edX ve Udemy sertifikaları' },
     ],
   },
