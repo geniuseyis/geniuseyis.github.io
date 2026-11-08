@@ -246,7 +246,7 @@ export default function App() {
           id="isler"
           number="02"
           title="Seçili işler"
-          intro="Üç uygulamanın kaynak kodu ve ekran görüntüleri herkese açık. Henüz mağazada değiller; her birinin nerede olduğunu aşağıya yazdım."
+          intro="Dört uygulamanın kaynak kodu ve ekran görüntüleri herkese açık. Henüz mağazada değiller; her birinin nerede olduğunu aşağıya yazdım."
         >
           <div className="projects">
             {projects.map((project) => <Project project={project} key={project.id} />)}

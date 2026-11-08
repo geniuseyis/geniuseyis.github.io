@@ -92,11 +92,18 @@ export const projects = [
     name: 'Afet Yardım Sistemi',
     kind: 'iOS ve Android · gerçek zamanlı koordinasyon',
     icon: 'afet.png',
+    poster: 'afet',
+    posterAlt: 'Afet Yardım’ın SOS, görev takibi ve koordinatör ekranlarını gösteren üç telefon',
     summary: 'Deprem ve sel gibi afetlerde yardım talebini, gönüllüyü ve koordinatörü aynı gerçek zamanlı platformda buluşturan mobil uygulama.',
     detail: 'Afetzede SOS ve yardım talebi gönderiyor, gönüllü yakındaki görevleri üstleniyor, koordinatör operasyonu tek ekrandan yönetiyor.',
-    metrics: [{ value: '3', label: 'rol: afetzede, gönüllü, koordinatör' }],
-    status: 'Kaynak kodu özel',
+    metrics: [
+      { value: '3', label: 'rol: afetzede, gönüllü, koordinatör' },
+      { value: '22', label: 'güvenlik kuralı testi' },
+      { value: 'Sunucuda', label: 'yetki, kota ve yapay zeka anahtarları' },
+    ],
+    status: 'Sırada cihaz testi ve mağazalar',
     tech: ['React Native', 'Expo SDK 54', 'TypeScript', 'Firestore', 'Cloud Functions'],
+    repo: 'https://github.com/geniuseyis/afet-yardim',
   },
 ]
 
