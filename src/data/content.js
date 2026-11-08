@@ -99,7 +99,7 @@ export const projects = [
     metrics: [
       { value: '3', label: 'rol: afetzede, gönüllü, koordinatör' },
       { value: '22', label: 'güvenlik kuralı testi' },
-      { value: 'Sunucuda', label: 'yetki, kota ve yapay zeka anahtarları' },
+      { value: 'Sunucuda', label: 'rol ve erişim denetimi' },
     ],
     status: 'Sırada cihaz testi ve mağazalar',
     tech: ['React Native', 'Expo SDK 54', 'TypeScript', 'Firestore', 'Cloud Functions'],
