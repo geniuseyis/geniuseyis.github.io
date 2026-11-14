@@ -3,7 +3,6 @@
 export const profile = {
   name: 'Seyit Baltacıoğlu',
   role: 'Mobil uygulama geliştirici',
-  location: 'İstanbul',
   // doldurulursa iletisim bolumunde kopyala butonuyla gorunur
   email: '',
   github: 'https://github.com/geniuseyis',

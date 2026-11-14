@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import HangingMobile from './components/HangingMobile.jsx'
 import CommitLog from './components/CommitLog.jsx'
+import Logo from './components/Logo.jsx'
 import { certificates, principles, profile, projects, stats, toolkit } from './data/content.js'
 
 const BASE = import.meta.env.BASE_URL
@@ -60,7 +61,7 @@ function Header() {
   return (
     <header className={`nav${scrolled ? ' is-scrolled' : ''}`}>
       <a className="nav__mark" href="#top" onClick={() => setOpen(false)}>
-        <span>SB</span> Seyit Baltacıoğlu
+        <Logo className="nav__logo" /> Seyit Baltacıoğlu
       </a>
       <button
         className="nav__toggle"
@@ -85,7 +86,7 @@ function Hero() {
     <section className="hero" id="top">
       <HangingMobile />
       <div className="hero__text">
-        <p className="eyebrow">{profile.role} · {profile.location}</p>
+        <p className="eyebrow">{profile.role}</p>
         <h1>Seyit<br />Baltacıoğlu<em>.</em></h1>
         <p className="hero__lead">
           Swift, Flutter ve React Native ile iOS ve Android uygulamaları geliştiriyorum.
