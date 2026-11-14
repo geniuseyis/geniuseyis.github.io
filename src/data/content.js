@@ -105,6 +105,24 @@ export const projects = [
     tech: ['React Native', 'Expo SDK 54', 'TypeScript', 'Firestore', 'Cloud Functions'],
     repo: 'https://github.com/geniuseyis/afet-yardim',
   },
+  {
+    id: 'sysfly',
+    name: 'sysfly',
+    kind: 'iOS ve Android · uçak bileti rezervasyonu',
+    icon: 'sysfly.png',
+    poster: 'sysfly',
+    posterAlt: 'sysfly’ın uçuşlarım, ana sayfa ve uçuş durumu ekranlarını gösteren üç telefon',
+    summary: 'Uçuş aramadan koltuk seçimine, ödemeden biniş kartına kadar bütün yolculuğu tek akışta toplayan uçak bileti uygulaması.',
+    detail: 'Alt menü yay fiziğiyle çalışıyor, sürüklenen kapsül gerçek kırılmalı bir cam merceğe dönüşüyor. Havalimanları açık veriden geliyor ve ülke ülke gruplanıyor. Yolcu formu THY’deki gibi T.C. kimlik numarasını algoritmayla doğruluyor, e-bilet PDF olarak paylaşılıyor.',
+    metrics: [
+      { value: '4.007', label: 'gerçek havalimanı, 233 ülke' },
+      { value: '7', label: 'dil, ayarlardan anında değişir' },
+      { value: '81', label: 'birim, widget, akış ve görsel test' },
+    ],
+    status: 'Sırada iOS cihaz testi',
+    tech: ['Flutter', 'Dart', 'Riverpod', 'go_router', 'CustomPainter', 'flutter_test'],
+    repo: 'https://github.com/geniuseyis/sysfly',
+  },
 ]
 
 // usedIn: yetenegin uzerine gelince gorunen yer
@@ -113,7 +131,7 @@ export const toolkit = [
     group: 'Diller',
     items: [
       { name: 'Swift', usedIn: 'Ringify' },
-      { name: 'Dart', usedIn: 'Finansım' },
+      { name: 'Dart', usedIn: 'Finansım, sysfly' },
       { name: 'JavaScript', usedIn: 'Bu portfolyo sitesi, React' },
       { name: 'TypeScript', usedIn: 'Plumbline, Afet Yardım' },
       { name: 'Java', usedIn: 'Spring Boot REST API' },
@@ -127,10 +145,10 @@ export const toolkit = [
     group: 'Mobil',
     items: [
       { name: 'SwiftUI', usedIn: 'Ringify' },
-      { name: 'Flutter', usedIn: 'Finansım' },
+      { name: 'Flutter', usedIn: 'Finansım, sysfly' },
       { name: 'React Native', usedIn: 'Plumbline, Afet Yardım' },
       { name: 'Expo', usedIn: 'Plumbline, Afet Yardım' },
-      { name: 'Riverpod', usedIn: 'Finansım' },
+      { name: 'Riverpod', usedIn: 'Finansım, sysfly' },
       { name: 'Skia', usedIn: 'Plumbline’ın çizim katmanı' },
       { name: 'AVFoundation', usedIn: 'Ringify’ın ses işleme hattı' },
       { name: 'StoreKit 2', usedIn: 'Ringify Pro' },
@@ -153,7 +171,7 @@ export const toolkit = [
     group: 'Test ve araçlar',
     items: [
       { name: 'XCTest', usedIn: 'Ringify' },
-      { name: 'flutter_test', usedIn: 'Finansım' },
+      { name: 'flutter_test', usedIn: 'Finansım, sysfly' },
       { name: 'Vitest', usedIn: 'Plumbline, Ringify önizlemesi' },
       { name: 'GitHub Actions', usedIn: 'Ringify, Finansım' },
       { name: 'EAS Build', usedIn: 'Plumbline' },

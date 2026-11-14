@@ -4,9 +4,10 @@ const BASE = import.meta.env.BASE_URL
 
 const ITEMS = [
   { id: 'ringify', label: 'Ringify', x: 14, len: 36, lenSm: 38, start: 0.16 },
-  { id: 'plumbline', label: 'Plumbline', x: 38, len: 62, lenSm: 72, start: -0.12 },
-  { id: 'finansim', label: 'Finansım', x: 62, len: 27, lenSm: 26, start: 0.2 },
-  { id: 'afet', label: 'Afet Yardım', x: 86, len: 49, lenSm: 56, start: -0.15 },
+  { id: 'plumbline', label: 'Plumbline', x: 32, len: 62, lenSm: 72, start: -0.12 },
+  { id: 'finansim', label: 'Finansım', x: 50, len: 27, lenSm: 26, start: 0.2 },
+  { id: 'afet', label: 'Afet Yardım', x: 68, len: 49, lenSm: 56, start: -0.15 },
+  { id: 'sysfly', label: 'sysfly', x: 86, len: 31, lenSm: 30, start: -0.1 },
 ]
 
 const GRAVITY = 1500
