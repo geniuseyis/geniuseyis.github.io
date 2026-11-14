@@ -71,7 +71,7 @@ em { font-style: normal; color: var(--brass); }
   padding: 120px var(--gutter) 40px;
   display: flex; flex-direction: column; justify-content: flex-end; gap: 56px;
 }
-.mobile { position: absolute; top: 0; right: var(--gutter); width: 46%; height: 100%; pointer-events: none; }
+.mobile { position: absolute; top: 0; right: calc(var(--gutter) / 2); width: 40%; height: 100%; pointer-events: none; }
 .mobile__arm {
   position: absolute; top: -20px; width: 1px; height: var(--len);
   background: var(--line-strong); transform-origin: 50% 0; will-change: transform;

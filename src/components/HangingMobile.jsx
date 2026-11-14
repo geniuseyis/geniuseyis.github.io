@@ -3,11 +3,11 @@ import { useEffect, useRef } from 'react'
 const BASE = import.meta.env.BASE_URL
 
 const ITEMS = [
-  { id: 'ringify', label: 'Ringify', x: 14, len: 36, lenSm: 38, start: 0.16 },
-  { id: 'plumbline', label: 'Plumbline', x: 32, len: 62, lenSm: 72, start: -0.12 },
-  { id: 'finansim', label: 'Finansım', x: 50, len: 27, lenSm: 26, start: 0.2 },
-  { id: 'afet', label: 'Afet Yardım', x: 68, len: 49, lenSm: 56, start: -0.15 },
-  { id: 'sysfly', label: 'sysfly', x: 86, len: 31, lenSm: 30, start: -0.1 },
+  { id: 'ringify', label: 'Ringify', x: 14, len: 36, lenSm: 38, start: -0.08 },
+  { id: 'plumbline', label: 'Plumbline', x: 32.5, len: 62, lenSm: 72, start: -0.07 },
+  { id: 'finansim', label: 'Finansım', x: 51, len: 27, lenSm: 26, start: -0.1 },
+  { id: 'afet', label: 'Afet Yardım', x: 69.5, len: 49, lenSm: 56, start: -0.06 },
+  { id: 'sysfly', label: 'sysfly', x: 88, len: 31, lenSm: 30, start: -0.02 },
 ]
 
 const GRAVITY = 1500
@@ -94,7 +94,8 @@ export default function HangingMobile() {
           ref={(node) => { nodes.current[i] = node }}
           style={{
             left: `${item.x}%`,
-            '--len': `${item.len}svh`,
+            // dikey tablette ipler yaziya inmesin diye genislikle de sinirli
+            '--len': `min(${item.len}svh, ${item.len * 0.75}vw)`,
             '--len-sm': `${item.lenSm}%`,
             transform: `rotate(${item.start}rad)`,
           }}
