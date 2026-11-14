@@ -96,12 +96,12 @@ em { font-style: normal; color: var(--brass); }
   width: clamp(72px, 7.4vw, 108px); aspect-ratio: 1; border-radius: 23%;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.5); user-select: none; -webkit-user-drag: none;
 }
-.mobile__item span {
-  font: 500 0.72rem var(--mono); color: var(--brass);
-  text-decoration: underline 1px rgba(240, 169, 69, 0.45); text-underline-offset: 4px;
-  transition: color 0.2s, text-decoration-color 0.2s;
+.mobile__item span { font: 500 0.72rem var(--mono); color: var(--muted); transition: color 0.25s, text-shadow 0.25s; }
+/* uzerine gelince sariya donup parliyor */
+.mobile__item:hover span, .mobile__item:focus-visible span {
+  color: var(--brass);
+  text-shadow: 0 0 8px rgba(240, 169, 69, 0.75), 0 0 20px rgba(240, 169, 69, 0.4);
 }
-.mobile__item:hover span, .mobile__item:focus-visible span { color: var(--text); text-decoration-color: currentColor; }
 
 .hero__text { position: relative; }
 .eyebrow { font: 500 0.82rem var(--mono); color: var(--brass); margin-bottom: 20px; }
